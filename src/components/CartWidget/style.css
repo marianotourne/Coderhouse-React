@@ -1,0 +1,15 @@
+section {
+  display: flex;
+  justify-content: flex-end;
+  width: 50px;
+}
+
+img {
+  width: 40px;
+}
+
+span {
+  font-weight: bold;
+  color: azure;
+  font-size: 1.4rem;
+}

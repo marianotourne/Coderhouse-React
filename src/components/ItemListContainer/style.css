@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  height: 500px;
+}
+
+main h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
