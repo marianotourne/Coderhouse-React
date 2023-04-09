@@ -10,6 +10,6 @@ img {
 
 span {
   font-weight: bold;
-  color: azure;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  padding-left: 6px;
 }

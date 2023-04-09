@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color-gold);
+}
+h2 {
+  font-size: 3rem;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding: 0 18px;
+  font-size: 2.6rem;
+  transition: all 0.2s ease-in-out;
+}
+
+ul li:hover {
+  cursor: pointer;
+  /* color: #7d7d7d; */
+  transform: scale(1.1);
+  font-weight: bold;
+}

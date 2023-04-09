@@ -1,12 +1,11 @@
-import React from "react";
-import "./style.css";
+import "./Navbar.css";
 import { CartWidget } from "../CartWidget/CartWidget";
 
 export const Navbar = () => {
   return (
     <>
       <nav>
-        <h2>Relojes</h2>
+        <h2>10:10</h2>
         <ul>
           <li>Analógicos</li>
           <li>Digitales</li>
