@@ -1,0 +1,28 @@
+.itemDetail {
+  width: 400px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid gray;
+  border-radius: 12px;
+  background-color: var(--color-gold);
+}
+
+.itemDetail figure {
+  height: 200px;
+}
+
+.itemDetail figure img {
+  height: 100%;
+  border-radius: 6px;
+}
+
+.itemDetail .itemDetailPrice {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.itemDetail .itemDetailCategory {
+  font-size: 4rem;
+}

@@ -1,19 +1,33 @@
-import { ProductCart } from "../ProductCart/ProductCart";
+import { React, useState } from "react";
+import "./ItemCount.css";
 
-const products = [
-  { name: "Rolex", price: 2000, stock: 3 },
-  { name: "Casio", price: 100, stock: 4 },
-  { name: "Mistral", price: 250, stock: 2 },
-];
+export const ItemCount = ({ initial, stock, onAdd }) => {
+  const [quantity, setQuantity] = useState(initial);
 
-export const ItemCount = () => {
+  const decrement = () => setQuantity(quantity - 1);
+  const increment = () => setQuantity(quantity + 1);
+
   return (
     <>
-      <h5>Listado de productos</h5>
-      {products.map((product) => (
-        <ProductCart name={product.name} price={product.price} />
-        //A ProductCart quiero mandar todas las props de una, no una por una
-      ))}
+      <div className="itemCount-container">
+        <div className="itemCount-btn">
+          <button onClick={decrement} disabled={quantity === 0}>
+            -
+          </button>
+          <span>{quantity}</span>
+          <button onClick={increment} disabled={stock === quantity}>
+            +
+          </button>
+        </div>
+        <div className="itemCount-purchasebtn">
+          <button
+            onClick={() => quantity !== 0 && onAdd(quantity)}
+            disabled={stock === 0}
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
     </>
   );
 };

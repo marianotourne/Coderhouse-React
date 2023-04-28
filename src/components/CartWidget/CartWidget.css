@@ -4,11 +4,11 @@ section {
   width: 50px;
 }
 
-img {
+section img {
   width: 40px;
 }
 
-span {
+section span {
   font-weight: bold;
   font-size: 1.6rem;
   padding-left: 6px;

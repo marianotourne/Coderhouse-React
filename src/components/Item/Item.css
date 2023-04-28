@@ -1,0 +1,38 @@
+.itemContainer {
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.itemContainer figure {
+  height: 200px;
+}
+.itemContainer figure img {
+  height: 100%;
+  border-radius: 6px;
+}
+
+.itemContainer .itemContainerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemContainer .itemContainerInfo .itemContainerName {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.itemContainer .itemContainerInfo .itemContainerPrice {
+  font-size: 2.4rem;
+}
+.itemContainer .itemContainerInfo .itemContainerStock {
+  font-size: 2rem;
+}

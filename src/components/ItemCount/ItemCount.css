@@ -1,0 +1,42 @@
+.itemCount-container {
+  background-color: #fff0a0;
+  padding: 8px;
+  border-radius: 10px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemCount-container div {
+  margin: 4px 0;
+}
+
+.itemCount-container .itemCount-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemCount-container .itemCount-btn button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.itemCount-container .itemCount-btn span {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 10px;
+  font-weight: 700;
+}
+
+.itemCount-container .itemCount-purchasebtn button {
+  background-color: rgb(21, 147, 2);
+  border: 1px solid transparent;
+  padding: 8px;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.itemCount-container .itemCount-purchasebtn button:hover {
+  border: 1px solid #ffffff;
+}
