@@ -7,6 +7,7 @@ nav {
 }
 h2 {
   font-size: 3rem;
+  color: black;
 }
 
 ul {
@@ -22,7 +23,15 @@ ul li {
 
 ul li:hover {
   cursor: pointer;
-  /* color: #7d7d7d; */
   transform: scale(1.1);
+  font-weight: bold;
+}
+
+ul li a {
+  color: black;
+  text-transform: capitalize;
+}
+
+.active {
   font-weight: bold;
 }

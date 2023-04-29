@@ -21,6 +21,8 @@
   background-color: white;
   border: 1px solid black;
   padding: 8px;
+  border-radius: 20px;
+  font-size: 3rem;
 }
 
 .itemCount-container .itemCount-btn span {

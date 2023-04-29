@@ -6,10 +6,12 @@
 }
 :root {
   --color-gold: #ffd700;
+  --color-card: #fff0a0;
 }
 
 html {
   font-size: 62.5%;
+  background-color: #fff4c2;
 }
 
 body {
@@ -20,4 +22,8 @@ body {
 
 button {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
