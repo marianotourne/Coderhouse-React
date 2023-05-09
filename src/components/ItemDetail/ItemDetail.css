@@ -13,7 +13,8 @@
 .itemDetail .itemDetailName {
   text-transform: uppercase;
   font-size: 4rem;
-  padding: 8px 0 0;
+  padding: 8px;
+  text-align: center;
 }
 
 .itemDetail figure {

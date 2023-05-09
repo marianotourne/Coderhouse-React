@@ -16,22 +16,26 @@ ul {
 
 ul li {
   list-style: none;
-  padding: 0 18px;
+  padding: 0px 18∫px;
   font-size: 2.6rem;
-  transition: all 0.2s ease-in-out;
-}
-
-ul li:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  font-weight: bold;
+  margin: 0 1px;
 }
 
 ul li a {
   color: black;
   text-transform: capitalize;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+ul li a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  font-weight: bold;
+  background-color: var(--color-card);
 }
 
 .active {
   font-weight: bold;
+  background-color: var(--color-card);
 }
