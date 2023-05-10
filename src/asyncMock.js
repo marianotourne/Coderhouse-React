@@ -79,12 +79,22 @@ export const getProductsByCategory = (category) => {
   });
 };
 
+// function getCategories(products) {
+//   const categories = [];
+//   for (const prod of products) {
+//     !categories.includes(prod.category) && categories.push(prod.category);
+//   }
+//   return categories;
+// }
+
+// export const categories = getCategories(products);
+
 function getCategories(products) {
-  const categories = [];
-  for (const prod of products) {
-    !categories.includes(prod.category) && categories.push(prod.category);
-  }
-  return categories;
+  const categories = new Set();
+  products.forEach((product) => {
+    categories.add(product.category);
+  });
+  return [...categories];
 }
 
 export const categories = getCategories(products);
