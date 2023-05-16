@@ -39,15 +39,3 @@
 .itemContainer .itemContainerInfo .itemContainerStock {
   font-size: 2rem;
 }
-
-.itemContainer .itemContainerBtnDetalle {
-  background-color: rgb(21, 147, 2);
-  border: 1px solid transparent;
-  padding: 8px;
-  font-size: 2rem;
-  color: #ffffff;
-}
-
-.itemContainer .itemContainerBtnDetalle:hover {
-  border: 1px solid #ffffff;
-}

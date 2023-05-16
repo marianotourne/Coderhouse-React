@@ -19,14 +19,13 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
             +
           </button>
         </div>
-        <div className="itemCount-purchasebtn">
-          <button
-            onClick={() => quantity !== 0 && onAdd(quantity)}
-            disabled={stock === 0}
-          >
-            Agregar al carrito
-          </button>
-        </div>
+        <button
+          className="btnConfirm"
+          onClick={() => quantity !== 0 && onAdd(quantity)}
+          disabled={stock === 0}
+        >
+          Agregar al carrito
+        </button>
       </div>
     </>
   );

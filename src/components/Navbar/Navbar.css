@@ -1,6 +1,6 @@
 nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   padding: 20px;
   background-color: var(--color-gold);
@@ -10,25 +10,26 @@ h2 {
   color: black;
 }
 
-ul {
+.navbarOptions {
   display: flex;
+  justify-content: center;
 }
 
-ul li {
+.navbarOptions li {
   list-style: none;
   padding: 0px 18∫px;
   font-size: 2.6rem;
   margin: 0 1px;
 }
 
-ul li a {
+.navbarOptions li a {
   color: black;
   text-transform: capitalize;
   padding: 4px 12px;
   border-radius: 6px;
   transition: all 0.2s ease-in-out;
 }
-ul li a:hover {
+.navbarOptions li a:hover {
   cursor: pointer;
   transform: scale(1.1);
   font-weight: bold;

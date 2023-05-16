@@ -1,0 +1,37 @@
+.cartItemRow {
+  padding: 20px;
+  display: flex;
+  height: 300px;
+  border-bottom: 2px solid gray;
+}
+
+.cartItemRow figure {
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartItemRow figure img {
+  height: 90%;
+}
+
+.cartItemRow div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.cartItemRow .cartItemRow-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0 20px;
+}
+.cartItemRow .cartItemRow-info {
+  color: gray;
+  font-size: 2.2rem;
+  padding: 6px 0;
+}
+
+.btnDelete {
+  width: 75px;
+  border-radius: 10px;
+}

@@ -22,6 +22,7 @@ export const ItemDetail = ({ id, name, price, stock, category, img }) => {
       id,
       name,
       price,
+      img,
     };
 
     addToCart(item, quantity);
@@ -36,8 +37,8 @@ export const ItemDetail = ({ id, name, price, stock, category, img }) => {
       <p className="itemDetailPrice">U$S {price}</p>
       <p className="itemDetailCategory">Categoría: {category}</p>
       {quantityBought > 0 ? (
-        <Link to="/cart" className="itemCount-purchasebtn">
-          <button>Finalizar Compra</button>
+        <Link to="/cart" className="btnConfirm">
+          Ver carrito
         </Link>
       ) : (
         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />

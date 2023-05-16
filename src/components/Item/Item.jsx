@@ -13,7 +13,7 @@ export const Item = ({ id, name, price, stock, img }) => {
           <p className="itemContainerPrice">U$S {price}</p>
           <p className="itemContainerStock">Stock: {stock}</p>
         </div>
-        <Link to={`/item/${id}`} className="itemContainerBtnDetalle">
+        <Link to={`/item/${id}`} className="btnConfirm">
           Ver Detalle
         </Link>
       </div>

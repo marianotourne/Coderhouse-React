@@ -10,7 +10,7 @@ export const Navbar = () => {
         <Link to="/">
           <h2>10:10</h2>
         </Link>
-        <ul>
+        <ul className="navbarOptions">
           {categories.map((category) => (
             <li key={category}>
               {""}

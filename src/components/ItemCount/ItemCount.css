@@ -31,14 +31,3 @@
   padding: 0 10px;
   font-weight: 700;
 }
-
-.itemCount-purchasebtn button {
-  background-color: rgb(21, 147, 2);
-  border: 1px solid transparent;
-  padding: 8px;
-  font-size: 2rem;
-  color: #ffffff;
-}
-.itemCount-purchasebtn button:hover {
-  border: 1px solid #ffffff;
-}
