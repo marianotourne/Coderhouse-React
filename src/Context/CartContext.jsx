@@ -4,6 +4,14 @@ export const CartContext = createContext({ cartList: [] });
 
 export const CartProvider = ({ children }) => {
   const [cartList, setCartList] = useState([]);
+  // const [cartList, setCartList] = useState(() => {
+  //   const saveProducts = localStorage.getItem("productsLS");
+  //   if (saveProducts) {
+  //     return JSON.parse(saveProducts);
+  //   } else {
+  //     return [];
+  //   }
+  // });
   const [totalQuantity, setTotalQuantity] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
 
@@ -42,6 +50,11 @@ export const CartProvider = ({ children }) => {
   const isInCart = (itemId) => {
     return cartList.some((product) => product.id === itemId);
   };
+
+  // useEffect(() => {
+  //   localStorage.setItem("productsLS", JSON.stringify(cartList));
+  //   localStorage.setItem("qtyCart", JSON.stringify(totalQuantity));
+  // }, [cartList, totalQuantity]);
 
   return (
     <CartContext.Provider
