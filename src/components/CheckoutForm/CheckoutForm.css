@@ -1,0 +1,35 @@
+.formContainer {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.form .formLabel {
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form .formInput {
+  font-size: 2.8rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  margin-top: 8px;
+}
+.form .formInput::placeholder {
+  color: gray;
+  opacity: 0.5;
+}
+
+.mailError {
+  text-align: center;
+  font-size: 5rem;
+}

@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--color-lightgold);
+  padding: 10px 16px;
+  min-width: 360px;
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+.footer .footer-bottom {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-bottom p {
+  font-size: 1.8rem;
+  opacity: 0.8;
+  font-weight: bold;
+}

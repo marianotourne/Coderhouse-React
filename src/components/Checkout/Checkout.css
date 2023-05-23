@@ -1,0 +1,13 @@
+.orderConfirmation {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 5rem;
+}
+.orderConfirmation h2 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+.orderConfirmation h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}

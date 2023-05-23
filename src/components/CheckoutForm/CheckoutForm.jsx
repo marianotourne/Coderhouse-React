@@ -1,14 +1,22 @@
 import { useState } from "react";
+import "./CheckoutForm.css";
 
 export const CheckoutForm = ({ onConfirm }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [emailConfirm, setEmailConfirm] = useState("");
+  const [error, setError] = useState("");
 
   const handleConfirm = (e) => {
     e.preventDefault();
-    const userData = { name, phone, email };
-    onConfirm(userData);
+    if (email !== emailConfirm) {
+      setError("Debe ingresar ambos mails iguales para continuar.");
+      return;
+    } else {
+      const userData = { name, phone, email };
+      onConfirm(userData);
+    }
   };
 
   return (
@@ -19,8 +27,10 @@ export const CheckoutForm = ({ onConfirm }) => {
           <input
             type="text"
             className="formInput"
+            placeholder="Juan Pérez"
             value={name}
             onChange={({ target }) => setName(target.value)}
+            required
           />
         </label>
         <label className="formLabel">
@@ -28,21 +38,39 @@ export const CheckoutForm = ({ onConfirm }) => {
           <input
             type="text"
             className="formInput"
+            placeholder="+5492494556677"
             value={phone}
             onChange={({ target }) => setPhone(target.value)}
+            required
           />
         </label>
         <label className="formLabel">
           e-Mail
           <input
-            type="text"
+            type="email"
             className="formInput"
+            placeholder="mail@mail.com"
             value={email}
             onChange={({ target }) => setEmail(target.value)}
+            required
           />
         </label>
+        <label className="formLabel">
+          Confirmar e-Mail
+          <input
+            type="email"
+            className="formInput"
+            placeholder="mail@mail.com"
+            value={emailConfirm}
+            onChange={({ target }) => setEmailConfirm(target.value)}
+            required
+          />
+        </label>
+        {error && <h5 className="mailError">{error}</h5>}
         <div className="formLabel">
-          <button type="submit">Confirmar</button>
+          <button type="submit" className="btnConfirm">
+            Confirmar
+          </button>
         </div>
       </form>
     </div>

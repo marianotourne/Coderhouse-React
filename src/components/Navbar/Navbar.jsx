@@ -2,6 +2,24 @@ import "./Navbar.css";
 import { CartWidget } from "../CartWidget/CartWidget";
 import { Link, NavLink } from "react-router-dom";
 
+const links = [
+  {
+    id: 1,
+    name: "analógicos",
+    path: "analogicos",
+  },
+  {
+    id: 2,
+    name: "digitales",
+    path: "digitales",
+  },
+  {
+    id: 3,
+    name: "smartwatch",
+    path: "smartwatch",
+  },
+];
+
 export const Navbar = () => {
   return (
     <>
@@ -10,18 +28,12 @@ export const Navbar = () => {
           <h2>10:10</h2>
         </Link>
         <ul className="navbarOptions">
-          <li>
-            {""}
-            <NavLink to={`/category/analógicos`}>analógicos</NavLink>
-          </li>
-          <li>
-            {""}
-            <NavLink to={`/category/digitales`}>digitales</NavLink>
-          </li>
-          <li>
-            {""}
-            <NavLink to={`/category/smartwatch`}>smartwatch</NavLink>
-          </li>
+          {links.map((link) => (
+            <li key={link.id}>
+              {""}
+              <NavLink to={`/category/${link.path}`}>{link.name}</NavLink>
+            </li>
+          ))}
         </ul>
         <CartWidget />
       </nav>
