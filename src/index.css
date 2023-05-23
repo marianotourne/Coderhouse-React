@@ -14,10 +14,14 @@ html {
   font-size: 62.5%;
 }
 
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 body {
   min-width: 360px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 button {
@@ -46,7 +50,6 @@ a {
   color: #ffffff;
 }
 
-/* cart */
 .btnDecline {
   background-color: rgb(220, 0, 0);
   border: 1px solid transparent;
