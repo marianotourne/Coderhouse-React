@@ -84,7 +84,7 @@ export const Checkout = () => {
       <div className="orderConfirmation">
         <h2>Orden generada correctamente.</h2>
         <h3>Número de orden: {orderId}</h3>
-        <Link to={`/`} className="btnConfirm">
+        <Link to={`/`} className="onBack">
           Volver a inicio
         </Link>
       </div>

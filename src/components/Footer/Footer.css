@@ -13,7 +13,13 @@ footer .footer-bottom {
 }
 
 footer .footer-bottom p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   opacity: 0.8;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  footer .footer-bottom p {
+    font-size: 1.2rem;
+  }
 }

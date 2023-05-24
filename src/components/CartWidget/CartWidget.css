@@ -11,4 +11,15 @@
   font-weight: bold;
   font-size: 1.6rem;
   padding-left: 6px;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .cartWidget img {
+    width: 30px;
+  }
+  .cartWidget span {
+    font-size: 1.4rem;
+    padding-left: 4px;
+  }
 }

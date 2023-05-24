@@ -48,6 +48,7 @@ a {
   padding: 8px;
   font-size: 2rem;
   color: #ffffff;
+  border-radius: 6px;
 }
 
 .btnDecline {
@@ -56,9 +57,18 @@ a {
   padding: 8px;
   font-size: 2rem;
   color: #ffffff;
+  border-radius: 6px;
 }
 
 .btnConfirm:hover,
 .btnDecline:hover {
   border: 1px solid #ffffff;
+}
+
+@media (max-width: 600px) {
+  .btnConfirm,
+  .btnDecline {
+    font-size: 1.4rem;
+    padding: 4px;
+  }
 }

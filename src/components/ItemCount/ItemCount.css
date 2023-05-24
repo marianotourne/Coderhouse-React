@@ -31,3 +31,14 @@
   padding: 0 10px;
   font-weight: 700;
 }
+
+@media (max-width: 600px) {
+  .itemCount-container .itemCount-btn button {
+    padding: 6px;
+    font-size: 2.6rem;
+  }
+  .itemCount-container .itemCount-btn span {
+    font-size: 2.6rem;
+    padding: 0 8px;
+  }
+}

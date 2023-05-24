@@ -34,3 +34,26 @@
   font-size: 3rem;
   text-transform: capitalize;
 }
+
+@media (max-width: 600px) {
+  .itemDetail {
+    width: 300px;
+  }
+
+  .itemDetail .itemDetailName {
+    font-size: 3.4rem;
+    padding: 4px;
+  }
+
+  .itemDetail figure {
+    height: 180px;
+  }
+
+  .itemDetail .itemDetailPrice {
+    font-size: 3.4rem;
+  }
+
+  .itemDetail .itemDetailCategory {
+    font-size: 2.4rem;
+  }
+}

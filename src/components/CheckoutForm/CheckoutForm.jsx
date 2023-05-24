@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./CheckoutForm.css";
 
 export const CheckoutForm = ({ onConfirm }) => {
@@ -7,6 +8,12 @@ export const CheckoutForm = ({ onConfirm }) => {
   const [email, setEmail] = useState("");
   const [emailConfirm, setEmailConfirm] = useState("");
   const [error, setError] = useState("");
+
+  const navigate = useNavigate();
+
+  const onBack = () => {
+    navigate(-1);
+  };
 
   const handleConfirm = (e) => {
     e.preventDefault();
@@ -68,6 +75,9 @@ export const CheckoutForm = ({ onConfirm }) => {
         </label>
         {error && <h5 className="mailError">{error}</h5>}
         <div className="formLabel">
+          <button type="submit" className="onBack" onClick={onBack}>
+            Volver
+          </button>
           <button type="submit" className="btnConfirm">
             Confirmar
           </button>

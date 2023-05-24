@@ -30,6 +30,7 @@
   font-size: 3.2rem;
   font-weight: bold;
   padding: 10px 0;
+  text-align: center;
 }
 .itemContainer .itemContainerInfo .itemContainerPrice {
   font-size: 2.8rem;
@@ -38,4 +39,14 @@
 }
 .itemContainer .itemContainerInfo .itemContainerStock {
   font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .itemContainer {
+    width: 300px;
+  }
+
+  .itemContainer figure {
+    height: 180px;
+  }
 }
