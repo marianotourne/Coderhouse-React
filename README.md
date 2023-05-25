@@ -13,8 +13,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 - [React 18.2.0](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
 - [Maven](https://maven.apache.org/) - Manejador de dependencias
 - [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
--
--     "firebase": "^9.22.0",
+- "firebase": "^9.22.0",
   "react": "^18.2.0",
   "react-dom": "^18.2.0",
   "react-router-dom": "^6.11.0",
@@ -23,14 +22,18 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 # minuto 27 ver ejemplo del tutor
 
+Este proyecto es parte del trabajo final del curso de React JS comisiÃ³n 39670, realizado en Coderhouse.
+Se creÃ³ mediante Create React App.
+Se puede navegar por categorÃ­as de producto, agregar productos al carrito hasta sus cantidades disponibles en stock, se valida el stock al confirmar la compra, eliminaciÃ³n de uno o todos los productos del carrito.
 
-Este proyecto es parte del trabajo final del curso de React JS comisión 39670, realizado en Coderhouse.
-Se creó mediante Create React App.
-Se puede navegar por categorías de producto, agregar productos al carrito hasta sus cantidades disponibles en stock, validación de stock al confirmar la compra, eliminación de uno o todos los productos del carrito.
-Utilicé ReactRouterDom para la navegabilidad, Context para el manejo de listado de productos agregados al carrito, y CSS puro para estilos.
-Utilicé Firebase para el manejo de base de datos tanto de listado de productos como generación y almacenamiento de las órdenes de compra.
+UtilicÃ© ReactRouterDom para la navegabilidad, Context para el manejo de listado de productos agregados al carrito, y CSS puro para estilos.
+
+UtilicÃ© Firebase para el manejo de base de datos tanto de listado de productos como generaciÃ³n y almacenamiento de las Ã³rdenes de compra.
+
+Se adapta a mÃºltiples pantallas, ya sean laptops, tablets y celulares.
 
 Listado de TODOs
-- Almacenar información en LocalStorage
-- Notificación cada vez que se agrega o elimina algún producto al carrito, o cuando se vacía el mismo.
-- Búsqueda de ordenes de compra y visualización de la información de la misma.
+
+- Almacenar informaciÃ³n en LocalStorage
+- NotificaciÃ³n cada vez que se agrega o elimina algÃºn producto al carrito, o cuando se vacÃ­a el mismo.
+- BÃºsqueda de ordenes de compra y visualizaciÃ³n de la informaciÃ³n de la misma.

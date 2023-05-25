@@ -4,6 +4,7 @@ import "./CheckoutForm.css";
 
 export const CheckoutForm = ({ onConfirm }) => {
   const [name, setName] = useState("");
+  const [lastname, setLastname] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [emailConfirm, setEmailConfirm] = useState("");
@@ -21,7 +22,7 @@ export const CheckoutForm = ({ onConfirm }) => {
       setError("Debe ingresar ambos mails iguales para continuar.");
       return;
     } else {
-      const userData = { name, phone, email };
+      const userData = { name, lastname, phone, email };
       onConfirm(userData);
     }
   };
@@ -34,18 +35,29 @@ export const CheckoutForm = ({ onConfirm }) => {
           <input
             type="text"
             className="formInput"
-            placeholder="Juan Pérez"
+            placeholder="Juan"
             value={name}
             onChange={({ target }) => setName(target.value)}
             required
           />
         </label>
         <label className="formLabel">
-          Teléfono
+          Apellido
           <input
             type="text"
             className="formInput"
-            placeholder="+5492494556677"
+            placeholder="Pérez"
+            value={lastname}
+            onChange={({ target }) => setLastname(target.value)}
+            required
+          />
+        </label>
+        <label className="formLabel">
+          Teléfono
+          <input
+            type="number"
+            className="formInput"
+            placeholder="2494556677"
             value={phone}
             onChange={({ target }) => setPhone(target.value)}
             required

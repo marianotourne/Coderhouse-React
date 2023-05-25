@@ -21,13 +21,14 @@ export const Checkout = () => {
 
   const { cartList, totalPrice, clearCart } = useContext(CartContext);
 
-  const createOrder = async ({ name, phone, email }) => {
+  const createOrder = async ({ name, lastname, phone, email }) => {
     setLoading(true);
 
     try {
       const objOrder = {
         buyer: {
           name,
+          lastname,
           phone,
           email,
         },
